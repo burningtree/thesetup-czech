@@ -1,0 +1,6 @@
+#404 redirect
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^thesetup\.cz$ [NC]
+RewriteRule ^(.*)$ http://thesetup.cz/$1 [R=301,L]

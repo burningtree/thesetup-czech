@@ -19,7 +19,7 @@ build:
 server:
 	@make clean
 	@make prepare
-	jekyll serve -s $(source) -d $(target) --watch --trace
+	jekyll serve -s $(source) -d $(target) --watch --trace --drafts
 
 publish:
 	make build && rsync -avz --delete -e ssh $(target) $(remote_target)

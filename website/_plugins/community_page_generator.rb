@@ -25,7 +25,7 @@ module Jekyll
         'personal' => [],
       }
       
-      data = YAML::load_file(File.join(site.source, "..", "links.yml"))
+      data = YAML::load_file(File.join(site.source, "..", "data", "links.yml"))
       links['personal'] = data
 
       site.pages << CommunityPage.new(site, site.source, 'komunita', links)

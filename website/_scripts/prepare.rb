@@ -16,7 +16,7 @@ end
 
 
 # interate over interviews
-Dir.glob(File.join('interviews', "**", "interview.yml")) do |path|
+Dir.glob(File.join('data', 'interviews', "**", "interview.md")) do |path|
 
   puts "Processing interview '#{path}'"
   interview = read_with_yaml(path)

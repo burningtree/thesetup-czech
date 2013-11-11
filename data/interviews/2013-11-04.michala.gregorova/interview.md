@@ -1,7 +1,7 @@
 ---
 name: "Michala Gregorová"
 summary: "PR specialistka, copywriterka"
-categories: [PR, copywriting, food]
+categories: [PR, jídlo]
 ---
 
 #### Kdo jsi a čemu se věnuješ?

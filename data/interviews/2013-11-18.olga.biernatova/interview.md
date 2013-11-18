@@ -1,6 +1,6 @@
 ---
 name: "Olga Biernátová"
-summary: "Marketingová koordinátorka, učitelka"
+summary: "marketingová koordinátorka, učitelka"
 categories: [knihy, marketing]
 ---
 

@@ -5,7 +5,7 @@ categories: [knihy, vzdělávání]
 ---
 
 #### Kdo jsi a čemu se věnuješ?
-Jmenuji se Petr Ludwig a věnuji se boji s chorobným odkládáním,takzvanou prokrastinací. Hlavní jádro mé práce ale je to, že se zabývám bouráním polopravd a mýtů, které mezi lidmy v oblasti osobního rozvoje panují. Před osmi lety založil vzdělávací institut [GrowJob](http://www.growjob.com/uvod/), který převádí aktuální vědecké poznatky do praxe. Napsal jsem knihu [Konec prokrastinace](http://www.konec-prokrastinace.cz/kniha/).
+Jmenuji se Petr Ludwig a věnuji se boji s chorobným odkládáním, takzvanou prokrastinací. Hlavní jádro mé práce ale je to, že se zabývám bouráním polopravd a mýtů, které mezi lidmy v oblasti osobního rozvoje panují. Před osmi lety založil vzdělávací institut [GrowJob](http://www.growjob.com/uvod/), který převádí aktuální vědecké poznatky do praxe. Napsal jsem knihu [Konec prokrastinace](http://www.konec-prokrastinace.cz/kniha/).
 
 #### Jaký používáš hardware?
 Papír, pero, diář. Počítač, [iPad](http://www.apple.com/cz/ipad/), mobil. Automobil.

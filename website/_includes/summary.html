@@ -3,7 +3,7 @@
 <h3 class="person">{% if selected %}{{interview.title}}{% else %}<a href="{{ interview.url }}" title="View an interview with {{interview.title}}.">{{interview.title}}</a>{% endif %}</h3>
 <p class="summary">{{interview.summary}}</p>
 <p class="date">Publikováno <time datetime="{{interview.date || date: "%Y-%m-%d"}}">{{interview.date || localize: '%d. %B %Y' }}</time></p>
-{% if selected and page.credits %}<p class="credits">Photo by {% if page.credits.url %}<a href="{{page.credits.url}}" title="View more about {{page.credits.name}}.">{{page.credits.name}}</a>{% else %}{{page.credits.name}}{% endif %}</p>{% endif %}
+{% if selected and interview.credits %}<p class="credits">Fotka od {% if interview.credits.url %}<a href="{{interview.credits.url}}" title="Zobrazit více o {{interview.credits.name}}.">{{interview.credits.name}}</a>{% else %}{{interview.credits.name}}{% endif %}</p>{% endif %}
 <ul class="categories">
 {% for category in interview.categories %}<li><a href="/rozhovory/{{category | to_ascii}}" title="Zobrazit všechny rozhovory z kategorie '{{category}}'.">{{category}}</a></li>{% endfor %}
 </ul>

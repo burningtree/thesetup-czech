@@ -31,6 +31,7 @@ Dir.glob(File.join('data', 'interviews', "**", "interview.md")) do |path|
     'title' => interview[0]['name'],
     'summary' => interview[0]['summary'],
     'slug' => slug_expl.drop(1).join('-'),
+    'credits' => interview[0]['credits'],
   }
 
   postfile = File.join('website', '_posts', slug+'.markdown')

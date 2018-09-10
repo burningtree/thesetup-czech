@@ -1,4 +1,0 @@
-markdown: redcarpet
-pygments: false
-permalink: rozhovory/:title.html
-paginate: 10

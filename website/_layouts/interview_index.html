@@ -10,11 +10,11 @@ title: Rozhovory
 <ul class="years">
 {% for year in page.archives %}
 	<li>
-		<a href="/rozhovory/{{year[0]}}/" title="View all interviews from {{year[0]}}."><strong>{{year[0]}}</strong></a>
+		<a href="{{ site.url }}/rozhovory/{{year[0]}}/" title="View all interviews from {{year[0]}}."><strong>{{year[0]}}</strong></a>
 		<ul class="months">
 		{% for month in year[1] reversed %}
 			{% capture month_name %}{{month[1][0].date | date: '%m'}}{% endcapture %}
-			<li><a href="/rozhovory/{{year[0]}}/{{month[0]}}/" title="View all interviews from {{month_name}}, {{year[0]}}.">{{month_name}}</a></li>
+			<li><a href="{{ site.url }}/rozhovory/{{year[0]}}/{{month[0]}}/" title="View all interviews from {{month_name}}, {{year[0]}}.">{{month_name}}</a></li>
 		{% endfor %}
 		</ul>
 	</li>
@@ -23,14 +23,14 @@ title: Rozhovory
 
 <h4>Podle kategorie</h4>
 <ul class="categories">
-{% for category in site.categories %}<li><a href="/rozhovory/{{category[0] | to_ascii}}" rel="category" title="View all '{{category[0]}}' interviews.">{{category[0]}}</a></li>{% endfor %}
+{% for category in site.categories %}<li><a href="{{ site.url }}/rozhovory/{{category[0] | to_ascii}}" rel="category" title="View all '{{category[0]}}' interviews.">{{category[0]}}</a></li>{% endfor %}
 </ul>
 
 <h4>Podle jména</h4>
 <ul class="peoples">
     {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}" rel="category" title="">{{ post.title }}</a> - {{ post.summary }}
+            <a href="{{ site.url }}{{ post.url }}" rel="category" title="">{{ post.title }}</a> - {{ post.summary }}
         </li>
     {% endfor %}
 </ul>

@@ -2,7 +2,8 @@ source='website/'
 target='website/_site/'
 remote_target=`cat _REMOTE`
 
-blank:
+install:
+	gem install jekyll iconv jekyll-paginate redcarpet
 
 clean:
 	rm -f website/images/portraits/*.jpg

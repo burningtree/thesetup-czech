@@ -6,8 +6,8 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
 <title>The Setup CZ</title>
-<link href="http://thesetup.cz/feed.xml" rel="self"/>
-<link href="http://thesetup.cz/"/>
+<link href="{{ site.url }}/feed.xml" rel="self"/>
+<link href="{{ site.url }}/"/>
 <updated>{{site.time | date_to_xmlschema}}</updated>
 <id>http://thesetup.com/</id>
 <author>
@@ -17,11 +17,11 @@ layout: nil
 {% for post in site.posts limit:10 %}
 <entry>
 	<title>{{post.title}}</title>
-	<link href="http://thesetup.cz/rozhovory/{{post.slug}}.html"/>
+	<link href="{{ site.url }}/rozhovory/{{post.slug}}.html"/>
 	<updated>{{post.date | date_to_xmlschema}}</updated>
-	<id>http://thesetup.cz/rozhovory/{{post.slug}}.html</id>
+	<id>{{ site.url }}/rozhovory/{{post.slug}}.html</id>
 	<content type="html">
-	{% capture interview %}<p><img src="http://thesetup.cz/images/portraits/{{post.slug}}.jpg" width="500" height="325" alt="{{post.title}}"></p>{{post.content}}{% endcapture %}
+	{% capture interview %}<p><img src="{{ site.url }}/images/portraits/{{post.slug}}.jpg" width="500" height="325" alt="{{post.title}}"></p>{{post.content}}{% endcapture %}
 	{{interview | xml_escape}}
 </content>
 </entry>

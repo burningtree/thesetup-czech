@@ -40,7 +40,7 @@ module Jekyll
     def generate(site)
       archives = {}
 
-      site.posts.reverse.each do |post|
+      site.posts.docs.reverse.each do |post|
 
         year = post.date.year
         month = post.date.strftime('%m')

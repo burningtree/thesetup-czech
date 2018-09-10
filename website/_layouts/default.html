@@ -2,28 +2,29 @@
 <html lang="cs-CZ" xml:lang="cs-CZ" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>The Setup CZ {% unless page.url == '/index.html' %}/ {{page.title}}{% endunless %}</title>
-    <link rel="shortcut icon" href="http://thesetup.cz/favicon.ico" />
-		<link href="/css/main.css" media="screen" rel="stylesheet" type="text/css">
-		<link href="/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml">
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
+		<link href="{{ site.url }}/css/main.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="{{ site.url }}/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<script src="http://use.edgefonts.net/source-sans-pro:n4,i4,n7:all.js"></script>
+		<script src="https://use.edgefonts.net/source-sans-pro:n4,i4,n7:all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     {% if page.slug %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.summary }}" />
-    <meta property="og:url" content="http://thesetup.cz/rozhovory/{{page.slug}}.html" />
+    <meta property="og:url" content="{{ site.url }}/rozhovory/{{page.slug}}.html" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="http://thesetup.cz/images/portraits/{{ page.slug }}.jpg" />
+    <meta property="og:image" content="{{ site.url }}/images/portraits/{{ page.slug }}.jpg" />
     <meta property="og:image:width" content="500" />
     <meta property="og:image:height" content="335" />
     {% endif %}
     {% if page.url == '/index.html' %}
     <meta property="og:title" content="The Setup CZ" />
     <meta property="og:description" content="Co lidem pomáhá dotáhnout věci do konce?" />
-    <meta property="og:url" content="http://thesetup.cz/" />
+    <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:type" content="website" />
     {% endif %}
-    <base href="http://thesetup.cz/">
+    <base href="{{ site.url }}">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -38,10 +39,10 @@
 
 				<nav id="main">
 					<ul>
-						<li><a href="/" title="The most recent interviews.">Domů</a></li>
-						<li><a href="/rozhovory/" title="All the other interviews.">Rozhovory</a></li>
-						<li><a href="/o-projektu/" title="A little more info about the site.">O projektu</a></li>
-						<li><a href="/komunita/" title="Other interviews by people like you.">Komunita</a></li>
+						<li><a href="{{ site.url }}/" title="The most recent interviews.">Domů</a></li>
+						<li><a href="{{ site.url }}/rozhovory/" title="All the other interviews.">Rozhovory</a></li>
+						<li><a href="{{ site.url }}/o-projektu/" title="A little more info about the site.">O projektu</a></li>
+						<li><a href="{{ site.url }}/komunita/" title="Other interviews by people like you.">Komunita</a></li>
 					</ul>
 				</nav>
 
@@ -55,10 +56,15 @@
 			</div>
 
 			<footer>
-				<p>Sledovat nás můžete přes <a href="/feed.xml">RSS feed</a> nebo náš Twitter účet <a href="http://twitter.com/TheSetupCZ">@TheSetupCZ</a>.<br>Nový rozhovor každý týden v <strong>pondělí</strong>.</p>
+				<p>Sledovat nás můžete přes <a href="{{ site.url }}/feed.xml">RSS feed</a> nebo náš Twitter účet <a href="http://twitter.com/TheSetupCZ">@TheSetupCZ</a>.<br>Nový rozhovor každý týden v <strong>pondělí</strong>.</p>
 				<p>Pokud není uvedeno jinak, tak je vše dostupné pod <a href="http://creativecommons.org/licenses/by-sa/3.0/cz" title="Creative Commons license.">Creative Commons Attribution-Share Alike</a> licencí.</p>
 			</footer>
 		</div>
+    <script>
+      $(document.links).filter(function() {
+        return this.hostname != window.location.hostname;
+      }).attr('target', '_blank');
+    </script>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,4 +1,6 @@
 markdown: redcarpet
-pygments: false
+highlighter: pygments
 permalink: rozhovory/:title.html
 paginate: 10
+plugins: [jekyll-paginate]
+url: https://burningtree.github.io/thesetup-czech

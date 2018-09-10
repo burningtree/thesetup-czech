@@ -1,4 +1,6 @@
-# [thesetup.cz](http://thesetup.cz)
+# [thesetup (cz)](https://burningtree.github.io/thesetup-czech/)
+
+**Projekt přerušen**
 
 * Co lidem pomáhá dotáhnout věci do konce?
 
